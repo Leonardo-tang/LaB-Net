@@ -1,0 +1,113 @@
+# 只评估部分数据集
+python evaluate_script.py --methods "YourMethodName" --test_paths "ECSSD+PASCAL-S"
+
+# 评估单个数据集
+python evaluate_script.py --methods "YourMethodName" --test_paths "DUT-OMRON"
+
+DUTLF-Depth (): 0.0290 mae || 0.9400 max-fm || 0.9234 mean-fm || 0.9605 max-Emeasure || 0.9500 mean-Emeasure || 0.9362 S-measure || 0.9639 AP || 0.9859 AUC.
+NJUD (): 0.0349 mae || 0.9241 max-fm || 0.9066 mean-fm || 0.9530 max-Emeasure || 0.9411 mean-Emeasure || 0.9231 S-measure || 0.9407 AP || 0.9800 AUC.
+NLPR (): 0.0248 mae || 0.9173 max-fm || 0.8971 mean-fm || 0.9593 max-Emeasure || 0.9484 mean-Emeasure || 0.9294 S-measure || 0.9399 AP || 0.9855 AUC.
+SIP (): 0.0425 mae || 0.9050 max-fm || 0.8881 mean-fm || 0.9362 max-Emeasure || 0.9261 mean-Emeasure || 0.8999 S-measure || 0.9205 AP || 0.9682 AUC.
+STERE (): 0.0384 mae || 0.9085 max-fm || 0.8890 mean-fm || 0.9454 max-Emeasure || 0.9333 mean-Emeasure || 0.9140 S-measure || 0.9415 AP || 0.9808 AUC.
+
+CAMO (bbsnet): 0.0879 mae || 0.7551 max-fm || 0.7246 mean-fm || 0.8602 max-Emeasure || 0.8040 mean-Emeasure || 0.7841 S-measure || 0.7920 AP || 0.9256 AUC.
+CHAMELEON (): 0.0358 mae || 0.8670 max-fm || 0.8295 mean-fm || 0.9482 max-Emeasure || 0.9072 mean-Emeasure || 0.8937 S-measure || 0.9037 AP || 0.9787 AUC.
+COD10K (): 0.0420 mae || 0.7187 max-fm || 0.6795 mean-fm || 0.8805 max-Emeasure || 0.8279 mean-Emeasure || 0.8004 S-measure || 0.7299 AP || 0.9409 AUC.
+NC4K (): 0.0589 mae || 0.7894 max-fm || 0.7610 mean-fm || 0.8917 max-Emeasure || 0.8498 mean-Emeasure || 0.8246 S-measure || 0.8187 AP || 0.9474 AUC.
+
+DUTLF-Depth (smt): 0.0223 mae || 0.9510 max-fm || 0.9361 mean-fm || 0.9692 max-Emeasure || 0.9613 mean-Emeasure || 0.9436 S-measure || 0.9716 AP || 0.9884 AUC.
+NJUD (smt): 0.0315 mae || 0.9277 max-fm || 0.9147 mean-fm || 0.9567 max-Emeasure || 0.9481 mean-Emeasure || 0.9261 S-measure || 0.9475 AP || 0.9831 AUC.
+NLPR (smt): 0.0182 mae || 0.9313 max-fm || 0.9164 mean-fm || 0.9718 max-Emeasure || 0.9630 mean-Emeasure || 0.9401 S-measure || 0.9523 AP || 0.9893 AUC.
+SIP (smt): 0.0397 mae || 0.9233 max-fm || 0.9100 mean-fm || 0.9469 max-Emeasure || 0.9369 mean-Emeasure || 0.9094 S-measure || 0.9308 AP || 0.9658 AUC.
+STERE (smt): 0.0328 mae || 0.9185 max-fm || 0.8987 mean-fm || 0.9554 max-Emeasure || 0.9460 mean-Emeasure || 0.9219 S-measure || 0.9470 AP || 0.9850 AUC.
+
+DUTLF-Depth (smt2): 0.0235 mae || 0.9502 max-fm || 0.9355 mean-fm || 0.9679 max-Emeasure || 0.9599 mean-Emeasure || 0.9424 S-measure || 0.9709 AP || 0.9876 AUC.
+NJUD (smt2): 0.0307 mae || 0.9294 max-fm || 0.9165 mean-fm || 0.9580 max-Emeasure || 0.9489 mean-Emeasure || 0.9271 S-measure || 0.9540 AP || 0.9852 AUC.
+NLPR (smt2): 0.0203 mae || 0.9260 max-fm || 0.9083 mean-fm || 0.9669 max-Emeasure || 0.9569 mean-Emeasure || 0.9346 S-measure || 0.9489 AP || 0.9874 AUC.
+SIP (smt2): 0.0413 mae || 0.9188 max-fm || 0.9057 mean-fm || 0.9403 max-Emeasure || 0.9309 mean-Emeasure || 0.9038 S-measure || 0.9205 AP || 0.9614 AUC.
+STERE (smt2): 0.0351 mae || 0.9140 max-fm || 0.8895 mean-fm || 0.9540 max-Emeasure || 0.9422 mean-Emeasure || 0.9174 S-measure || 0.9432 AP || 0.9846 AUC.
+
+CAMO (smt): 0.0583 mae || 0.8392 max-fm || 0.8149 mean-fm || 0.9156 max-Emeasure || 0.8795 mean-Emeasure || 0.8511 S-measure || 0.8834 AP || 0.9622 AUC.
+CHAMELEON (smt): 0.0262 mae || 0.8763 max-fm || 0.8478 mean-fm || 0.9617 max-Emeasure || 0.9231 mean-Emeasure || 0.9037 S-measure || 0.8983 AP || 0.9762 AUC.
+COD10K (smt): 0.0290 mae || 0.7952 max-fm || 0.7620 mean-fm || 0.9236 max-Emeasure || 0.8723 mean-Emeasure || 0.8457 S-measure || 0.8127 AP || 0.9569 AUC.
+NC4K (smt): 0.0422 mae || 0.8517 max-fm || 0.8281 mean-fm || 0.9293 max-Emeasure || 0.8935 mean-Emeasure || 0.8671 S-measure || 0.8821 AP || 0.9650 AUC.
+
+CAMO (双向+loss+ega): 0.0591 mae || 0.8352 max-fm || 0.8164 mean-fm || 0.9152 max-Emeasure || 0.8984 mean-Emeasure || 0.8488 S-measure || 0.8681 AP || 0.9548 AUC.
+CHAMELEON (5): 0.0283 mae || 0.8773 max-fm || 0.8497 mean-fm || 0.9592 max-Emeasure || 0.9417 mean-Emeasure || 0.8974 S-measure || 0.9018 AP || 0.9732 AUC.
+COD10K (5): 0.0273 mae || 0.8090 max-fm || 0.7831 mean-fm || 0.9343 max-Emeasure || 0.9169 mean-Emeasure || 0.8550 S-measure || 0.8200 AP || 0.9545 AUC.
+NC4K (5): 0.0381 mae || 0.8614 max-fm || 0.8405 mean-fm || 0.9373 max-Emeasure || 0.9225 mean-Emeasure || 0.8771 S-measure || 0.8885 AP || 0.9670 AUC.
+
+CAMO (): 0.0558 mae || 0.8448 max-fm || 0.8339 mean-fm || 0.9227 max-Emeasure || 0.9048 mean-Emeasure || 0.8553 S-measure || 0.8696 AP || 0.9546 AUC.
+CHAMELEON (): 0.0233 mae || 0.8891 max-fm || 0.8747 mean-fm || 0.9629 max-Emeasure || 0.9517 mean-Emeasure || 0.9086 S-measure || 0.9082 AP || 0.9733 AUC.
+COD10K (): 0.0250 mae || 0.8174 max-fm || 0.8013 mean-fm || 0.9355 max-Emeasure || 0.9238 mean-Emeasure || 0.8602 S-measure || 0.8069 AP || 0.9442 AUC.
+NC4K (): 0.0364 mae || 0.8641 max-fm || 0.8527 mean-fm || 0.9364 max-Emeasure || 0.9248 mean-Emeasure || 0.8784 S-measure || 0.8748 AP || 0.9596 AUC.
+
+CAMO (): 0.0534 mae || 0.8640 max-fm || 0.8469 mean-fm || 0.9301 max-Emeasure || 0.9088 mean-Emeasure || 0.8684 S-measure || 0.9049 AP || 0.9691 AUC.
+CHAMELEON (): 0.0267 mae || 0.8849 max-fm || 0.8684 mean-fm || 0.9660 max-Emeasure || 0.9452 mean-Emeasure || 0.9013 S-measure || 0.9070 AP || 0.9726 AUC.
+COD10K (): 0.0286 mae || 0.8129 max-fm || 0.7974 mean-fm || 0.9273 max-Emeasure || 0.9090 mean-Emeasure || 0.8549 S-measure || 0.8125 AP || 0.9484 AUC.
+NC4K (): 0.0374 mae || 0.8659 max-fm || 0.8528 mean-fm || 0.9362 max-Emeasure || 0.9152 mean-Emeasure || 0.8746 S-measure || 0.8839 AP || 0.9635 AUC.
+
+CAMO (): 0.0560 mae || 0.8371 max-fm || 0.8153 mean-fm || 0.9149 max-Emeasure || 0.8842 mean-Emeasure || 0.8570 S-measure || 0.8786 AP || 0.9625 AUC.
+CHAMELEON (): 0.0260 mae || 0.8910 max-fm || 0.8620 mean-fm || 0.9631 max-Emeasure || 0.9333 mean-Emeasure || 0.9116 S-measure || 0.9189 AP || 0.9786 AUC.
+COD10K (): 0.0289 mae || 0.8090 max-fm || 0.7710 mean-fm || 0.9296 max-Emeasure || 0.8844 mean-Emeasure || 0.8556 S-measure || 0.8293 AP || 0.9624 AUC.
+NC4K (): 0.0347 mae || 0.8583 max-fm || 0.8337 mean-fm || 0.9322 max-Emeasure || 0.9022 mean-Emeasure || 0.8749 S-measure || 0.8888 AP || 0.9675 AUC.
+
+CAMO (): 0.0511 mae || 0.8517 max-fm || 0.8408 mean-fm || 0.9256 max-Emeasure || 0.9080 mean-Emeasure || 0.8623 S-measure || 0.8725 AP || 0.9553 AUC.
+CHAMELEON (): 0.0225 mae || 0.8812 max-fm || 0.8673 mean-fm || 0.9512 max-Emeasure || 0.9409 mean-Emeasure || 0.9050 S-measure || 0.8827 AP || 0.9638 AUC.
+COD10K (): 0.0252 mae || 0.8140 max-fm || 0.8009 mean-fm || 0.9308 max-Emeasure || 0.9170 mean-Emeasure || 0.8581 S-measure || 0.7978 AP || 0.9391 AUC.
+NC4K (): 0.0351 mae || 0.8678 max-fm || 0.8574 mean-fm || 0.9388 max-Emeasure || 0.9257 mean-Emeasure || 0.8800 S-measure || 0.8745 AP || 0.9568 AUC.
+
+COD10K (SCA): 0.0332 mae || 0.7953 max-fm || 0.7792 mean-fm || 0.9015 max-Emeasure || 0.8829 mean-Emeasure || 0.8442 S-measure || 0.8412 AP || 0.9532 AUC.
+COD10K (GA): 0.0320 mae || 0.7921 max-fm || 0.7693 mean-fm || 0.9129 max-Emeasure || 0.8831 mean-Emeasure || 0.8411 S-measure || 0.8319 AP || 0.9416 AUC.
+COD10K (非双向): 0.0234 mae || 0.8214 max-fm || 0.7939 mean-fm || 0.9436 max-Emeasure || 0.9192 mean-Emeasure || 0.8741 S-measure || 0.8602 AP || 0.9656 AUC.
+
+CAMO (final): 0.0472 mae || 0.8623 max-fm || 0.8508 mean-fm || 0.9306 max-Emeasure || 0.9280 mean-Emeasure || 0.8743 S-measure || 0.8739 AP || 0.9601 AUC.
+CHAMELEON (): 0.0205 mae || 0.8981 max-fm || 0.8873 mean-fm || 0.9682 max-Emeasure || 0.9509 mean-Emeasure || 0.9203 S-measure || 0.8796 AP || 0.9598 AUC.
+COD10K (): 0.0242 mae || 0.8210 max-fm || 0.8029 mean-fm || 0.9518 max-Emeasure || 0.9270 mean-Emeasure || 0.8791 S-measure || 0.8721 AP || 0.9571 AUC.
+NC4K (): 0.0314 mae || 0.8684 max-fm || 0.8474 mean-fm || 0.9408 max-Emeasure || 0.9257 mean-Emeasure || 0.8880 S-measure || 0.8793 AP || 0.9631 AUC.
+COD10K (Baseline): 0.0420 mae || 0.7187 max-fm || 0.6795 mean-fm || 0.8805 max-Emeasure || 0.8279 mean-Emeasure || 0.8004 S-measure || 0.7299 AP || 0.9409 AUC.
+
+COD10K (BHF): 0.0290 mae || 0.7952 max-fm || 0.7620 mean-fm || 0.9236 max-Emeasure || 0.8723 mean-Emeasure || 0.8457 S-measure || 0.8127 AP || 0.9569 AUC..
+
+COD10K (TMRD): 0.0293 mae || 0.7904 max-fm || 0.7587 mean-fm || 0.9197 max-Emeasure || 0.8669 mean-Emeasure || 0.8418 S-measure || 0.8243 AP || 0.9502 AUC.
+
+COD10K (BHF+TMRD): 0.0250 mae || 0.8173 max-fm || 0.7942 mean-fm || 0.9365 max-Emeasure || 0.9229 mean-Emeasure || 0.8712 S-measure || 0.8519 AP || 0.9652 AUC.
+
+CHAMELEON (new final): 0.0179 mae || 0.9011 max-fm || 0.8890 mean-fm || 0.9635 max-Emeasure || 0.9512 mean-Emeasure || 0.9160 S-measure || 0.9160 AP || 0.9756 AUC.
+CAMO (): 0.0455 mae || 0.8751 max-fm || 0.8659 mean-fm || 0.9338 max-Emeasure || 0.9223 mean-Emeasure || 0.8789 S-measure || 0.8886 AP || 0.9592 AUC.
+COD10K (): 0.0199 mae || 0.8431 max-fm || 0.8302 mean-fm || 0.9407 max-Emeasure || 0.9285 mean-Emeasure || 0.8807 S-measure || 0.8369 AP || 0.9520 AUC.
+NC4K (): 0.0339 mae || 0.8723 max-fm || 0.8622 mean-fm || 0.9402 max-Emeasure || 0.9282 mean-Emeasure || 0.8840 S-measure || 0.8803 AP || 0.9590 AUC.
+
+
+COD10K (SM+MM+GM): 0.0232 mae || 0.8383 max-fm || 0.8292 mean-fm || 0.9365 max-Emeasure || 0.9299 mean-Emeasure || 0.8772 S-measure || 0.8612 AP || 0.9532 AUC.
+
+COD10K (GM+SM+MM): 0.0236 mae || 0.8325 max-fm || 0.8281 mean-fm || 0.9345 max-Emeasure || 0.9301 mean-Emeasure || 0.8747 S-measure || 0.8632 AP || 0.9610 AUC.
+
+COD10K (MM+GM+SM): 0.0228 mae || 0.8393 max-fm || 0.8320 mean-fm || 0.9361 max-Emeasure || 0.9278 mean-Emeasure || 0.8788 S-measure || 0.8589 AP || 0.9633 AUC.
+
+
+
+
+
+CAMO (): 0.0662 mae || 0.8053 max-fm || 0.7943 mean-fm || 0.8919 max-Emeasure || 0.8777 mean-Emeasure || 0.8199 S-measure || 0.8432 AP || 0.9489 AUC.
+COD10K (): 0.0289 mae || 0.7797 max-fm || 0.7660 mean-fm || 0.9109 max-Emeasure || 0.8883 mean-Emeasure || 0.8385 S-measure || 0.8016 AP || 0.9509 AUC.
+NC4K (): 0.0436 mae || 0.8279 max-fm || 0.8179 mean-fm || 0.9120 max-Emeasure || 0.8962 mean-Emeasure || 0.8529 S-measure || 0.8555 AP || 0.9561 AUC.
+CHAMELEON (): 0.0232 mae || 0.8764 max-fm || 0.8640 mean-fm || 0.9576 max-Emeasure || 0.9433 mean-Emeasure || 0.9018 S-measure || 0.8983 AP || 0.9731 AUC.
+CAMO (): 0.0461 mae || 0.8681 max-fm || 0.8549 mean-fm || 0.9378 max-Emeasure || 0.9295 mean-Emeasure || 0.8717 S-measure || 0.8771 AP || 0.9561 AUC.
+COD10K (): 0.0226 mae || 0.8290 max-fm || 0.8119 mean-fm || 0.9395 max-Emeasure || 0.9318 mean-Emeasure || 0.8692 S-measure || 0.8111 AP || 0.9458 AUC.
+NC4K (): 0.0301 mae || 0.8801 max-fm || 0.8685 mean-fm || 0.9460 max-Emeasure || 0.9390 mean-Emeasure || 0.8916 S-measure || 0.8819 AP || 0.9604 AUC.
+CHAMELEON (): 0.0221 mae || 0.8977 max-fm || 0.8827 mean-fm || 0.9661 max-Emeasure || 0.9576 mean-Emeasure || 0.9100 S-measure || 0.9163 AP || 0.9725 AUC.
+CAMO (): 0.0765 mae || 0.7918 max-fm || 0.7842 mean-fm || 0.8740 max-Emeasure || 0.8589 mean-Emeasure || 0.8081 S-measure || 0.7874 AP || 0.9190 AUC.
+COD10K (): 0.0275 mae || 0.8022 max-fm || 0.7868 mean-fm || 0.9186 max-Emeasure || 0.9099 mean-Emeasure || 0.8512 S-measure || 0.7840 AP || 0.9358 AUC.
+NC4K (): 0.0422 mae || 0.8425 max-fm || 0.8330 mean-fm || 0.9188 max-Emeasure || 0.9092 mean-Emeasure || 0.8612 S-measure || 0.8413 AP || 0.9449 AUC.
+CHAMELEON (): 0.0204 mae || 0.9026 max-fm || 0.8852 mean-fm || 0.9766 max-Emeasure || 0.9650 mean-Emeasure || 0.9175 S-measure || 0.9078 AP || 0.9721 AUC.
+CAMO (RGB_VST_yuanshi): 0.0608 mae || 0.8184 max-fm || 0.8042 mean-fm || 0.9077 max-Emeasure || 0.8928 mean-Emeasure || 0.8359 S-measure || 0.8471 AP || 0.9507 AUC.
+COD10K (RGB_VST_yuanshi): 0.0284 mae || 0.7951 max-fm || 0.7750 mean-fm || 0.9253 max-Emeasure || 0.9139 mean-Emeasure || 0.8469 S-measure || 0.7863 AP || 0.9453 AUC.
+NC4K (RGB_VST_yuanshi): 0.0380 mae || 0.8536 max-fm || 0.8389 mean-fm || 0.9304 max-Emeasure || 0.9208 mean-Emeasure || 0.8739 S-measure || 0.8704 AP || 0.9633 AUC.
+CAMO (): 0.0504 mae || 0.8617 max-fm || 0.8480 mean-fm || 0.9298 max-Emeasure || 0.9225 mean-Emeasure || 0.8697 S-measure || 0.8704 AP || 0.9586 AUC.
+COD10K (): 0.0247 mae || 0.8369 max-fm || 0.8169 mean-fm || 0.9378 max-Emeasure || 0.9309 mean-Emeasure || 0.8736 S-measure || 0.8133 AP || 0.9482 AUC.
+NC4K (): 0.0366 mae || 0.8661 max-fm || 0.8544 mean-fm || 0.9301 max-Emeasure || 0.9254 mean-Emeasure || 0.8818 S-measure || 0.8635 AP || 0.9567 AUC.
+CAMO (): 0.0474 mae || 0.8734 max-fm || 0.8628 mean-fm || 0.9314 max-Emeasure || 0.9236 mean-Emeasure || 0.8737 S-measure || 0.8857 AP || 0.9576 AUC.
+COD10K (): 0.0192 mae || 0.8565 max-fm || 0.8413 mean-fm || 0.9483 max-Emeasure || 0.9348 mean-Emeasure || 0.8874 S-measure || 0.8632 AP || 0.9617 AUC.
+CHAMELEON (): 0.0174 mae || 0.9084 max-fm || 0.8964 mean-fm || 0.9696 max-Emeasure || 0.9574 mean-Emeasure || 0.9224 S-measure || 0.9257 AP || 0.9804 AUC.
+NC4K (): 0.0303 mae || 0.8840 max-fm || 0.8747 mean-fm || 0.9427 max-Emeasure || 0.9325 mean-Emeasure || 0.8922 S-measure || 0.8936 AP || 0.9640 AUC.

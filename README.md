@@ -9,7 +9,7 @@ Layer-adaptive Bidirectional Fusion with Multi-stage Refinement for Camouflaged 
 </p>
 
 <p align="center">
-    <img src="LABFM.png" width="80%"/> <br />
+    <img src="LABFM2.png" width="80%"/> <br />
  <em> 
     Figure 1: The details of each module of LABFM.
     </em>

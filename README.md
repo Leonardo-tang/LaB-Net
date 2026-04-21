@@ -35,7 +35,7 @@ Downloading dataset：You can find the [training and test datasets](https://gith
 ##  Results
 ### Qualitative Comparison
 <p align="center">
-    <img src=result1.png" width="80%"/> <br />
+    <img src=table1.png" width="80%"/> <br />
 </p>
 <p align="center">
     <img src="result2.png" width="80%"/> <br />

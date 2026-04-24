@@ -23,6 +23,17 @@ Python 3.7, Pytorch 1.5.0+, Cuda 10.2+, TensorboardX 2.1, opencv-python
 ## Training & Testing
 The training and testing experiments are conducted using PyTorch with one NVIDIA 3090 GPU of 24 GB Memory.
 Downloading dataset：You can find the [training and test datasets](https://github.com/DengPingFan/SINet/) here.
+# Train on COD10K training set (example)
+python train.py --dataset COD10K --batch_size 4 --epochs 200 --lr 5e-5 --gpu_id 0
+
+# Resume from checkpoint
+python train.py --resume ./checkpoints/labnet_cod10k_epoch100.pth
+
+# Test on COD10K test set
+python test.py --dataset COD10K --model_path ./checkpoints/labnet_best.pth --save_pred
+
+# Test on all datasets
+bash scripts/test_all.sh
 
 
 ### Evaluation Script

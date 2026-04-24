@@ -1,5 +1,7 @@
 # LaB-Net
-Layer-adaptive Bidirectional Fusion with Multi-stage Refinement for Camouflaged Object Detection
+This repository is associated with the paper "Hierarchical RGB-D Fusion and Cross-Stage Refinement for Visual Camouflaged Object Detection" submitted to The Visual Computer.
+
+Hierarchical RGB-D Fusion and Cross-Stage Refinement for Visual Camouflaged Object Detection
 
 <p align="center">
     <img src="zhugan.png" width="80%"/> <br />
